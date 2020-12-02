@@ -1,0 +1,15 @@
+---
+working_dir: temp/
+result_dir: results/
+fastp:
+  cut_front_window_size: "10"
+  cut_front_mean_quality: "5"
+  qualified_quality_phred: 15
+  minReadLength: "240"
+  phred: "-phred33"
+  adapters: adapters2.fasta
+refs:
+  taxa_train: "https://zenodo.org/record/3986799/files/silva_nr99_v138_train_set.fa.gz"
+  taxa_spec: "https://zenodo.org/record/3986799/files/silva_species_assignment_v138.fa.gz"
+units: Bsamples.tsv
+

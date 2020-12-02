@@ -1,0 +1,11 @@
+*~*
+results/
+logs/
+*.DS_Store
+.DS_Store
+*.snakemake
+.snakemake/
+temp/
+*.json
+silva*
+slurm*.out

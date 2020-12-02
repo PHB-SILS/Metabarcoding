@@ -1,0 +1,7 @@
+__default__:
+    account: fwhite             # your hpc account
+    partition: all                # the partition you use
+    time: 360 # default time (minutes)
+    nodes: 1
+    ntasks: 1
+    mem: 14GB # default memory
