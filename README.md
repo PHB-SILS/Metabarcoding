@@ -3,6 +3,7 @@ Metabarcoding Pipeline Slurm/Snakemake tests
 
 
 
+  For Crunchomics:
   
   Git clone this repo, activate the environment and run:
   
@@ -13,9 +14,11 @@ Metabarcoding Pipeline Slurm/Snakemake tests
   
   conda env create --name metabarcoding --file Metaenv.yml
   
+  salloc -N 1 -w omics-cn005 --cpus-per-task 30 --mem=30G
+  
   conda activate metabarcoding
   
-  snakemake --profile slurm/ --jobs 10
+  srun snakemake --cores 30
   ~~~
 
 TO DO:
